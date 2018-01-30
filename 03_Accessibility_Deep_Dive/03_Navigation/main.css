@@ -1,0 +1,65 @@
+html {
+  font-size: 100%;
+}
+
+#skip {
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 100%; /* moves off screen */
+}
+
+#skip:focus {
+  right: auto;
+}
+
+#navigation {
+  width: 100%;
+}
+
+#navigation button {
+  display: none;
+}
+
+.nav-links {
+  display: block;
+  padding: 0;
+}
+
+#navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+@media(max-width: 768px) {
+  #navigation button {
+    display: block;
+  }
+  .nav-links, .nav-links {
+    display: none;
+  }
+
+  #navigation ul li {
+    display: block;
+  }
+}
+
+/*
+ *
+ * This is kept below the media query
+ * so that it would be the one on top of the cascade
+ *
+ */
+.open {
+  display: block;
+}
+
+main {
+  max-width: 60em;
+  max-width: 60rem;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.48;
+}

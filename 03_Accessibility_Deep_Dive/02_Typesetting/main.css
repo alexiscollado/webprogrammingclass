@@ -1,0 +1,25 @@
+html {
+  /* 100% to follow the size in the browswer set by the user */
+  font-size: 100%;
+}
+
+#skip {
+  color: black;
+  position: absolute;
+  top: 0;
+  right: 100%; /* moves off screen */
+}
+
+#skip:focus {
+  right: auto;
+}
+
+main {
+  max-width: 60em;
+  max-width: 60rem;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.48;
+}
